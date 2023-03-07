@@ -1,0 +1,73 @@
+{
+  "header-title": "Vehicle Recognition System",
+  "header-profile": "Profile",
+  "header-logout": "Logout",
+  "menu-violation": "Violation",
+  "menu-lpr": "LPR",
+  "menu-live": "Live",
+  "violation-title": "Violation",
+  "lpr-title": "LPR",
+  "live-title": "Live",
+  "profile-title": "Profile",
+  "table-title":"Violation List",
+  "table-th1":"No.",
+  "table-th2":"Location",
+  "table-th3":"Violation",
+  "table-th4":"Time",
+  "table-th5":"Car Type",
+  "table-th6":"License plate",
+  "table-th7":"More",
+  "table-th8":"More",
+  "Img-btn":"Picture",
+  "Video-btn":"Video",
+  "login-title": "Login",
+  "login-language": "Language",
+  "login-signup": "Sign up",
+  "login-button": "Login",
+  "login-label-password": "Password",
+  "login-holder-password": "password",
+  "login-label-account": "Account",
+  "login-holder-account": "account",
+  "regis-title": "Account Registration",
+  "regis-return": "Return",
+  "regis-submit": "Submit",
+  "regis-label-token": "Token",
+  "regis-holder-token": "Input token",
+  "regis-label-confirm-password": "Confirm password",
+  "regis-holder-confirm-password": "Input confirm password",
+  "regis-label-password": "Password",
+  "regis-holder-password": "Input password",
+  "regis-password-hint": "* At least 8 characters & At least one character and one number",
+  "regis-label-username": "Account",
+  "regis-holder-username": "Input account",
+  "regis-username-hint": "* At least 4 characters & Character and number only",
+  "regis-label-name": "Display Name",
+  "regis-holder-name": "Input display name"
+
+  ,"book-title": "Reservation System"
+   ,"header-title-orange": "Game Orange License Plate Recognition System"
+   ,"book-table-title":"book table"
+  
+   ,"record-table-title": "Pass Record"
+   , "record-table-list": "Access record list"
+
+   ,"visitor-name": "Name"
+   ,"visitor-unit": "unit"
+   ,"visitor-vehicleType": "Vehicle Type"
+   ,"visitor-allowType": "Eligibility"
+   ,"visitor-note": "Note"
+   ,"visitor-visitorStartStr": "Reservation start time"
+   ,"visitor-visitorEndStr": "Appointment end time"
+   ,"visitor-plateNumber": "Plate Number"
+
+   ,"black-list": "Blacklist"
+
+   ,"recognitionTimeStr": "Recognition Time"
+   , "passStatus": "Status"
+   , "cameraId": "camera"
+
+   ,"car-type-all":"all type"
+   ,"car-type-car":"car"
+   ,"car-type-motor":"motor"
+
+}

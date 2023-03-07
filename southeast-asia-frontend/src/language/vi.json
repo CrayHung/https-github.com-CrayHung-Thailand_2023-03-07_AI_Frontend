@@ -1,0 +1,72 @@
+{
+  "header-title": "Hệ thống Nhận dạng Xe",
+  "header-profile": "Hồ sơ",
+  "header-logout": "Đăng xuất",
+  "menu-violation": "Vi phạm",
+  "menu-lpr": "LPR",
+  "menu-live": "Live",
+  "violation-title": "Vi phạm",
+  "lpr-title": "LPR",
+  "live-title": "Live",
+  "profile-title": "Hồ sơ",
+  "table-title": "Danh sách vi phạm",
+  "table-th1": "Đánh số",
+  "table-th2": "Vị trí",
+  "table-th3": "Vi phạm",
+  "table-th4": "Thời gian",
+  "table-th5": "Loại ô tô",
+  "table-th6": "Biển số",
+  "table-th7": "khác",
+  "table-th8": "khác",
+  "Img-btn": "Hình ảnh",
+  "Video-btn": "Video",
+  "login-title": "Đăng nhập",
+  "login-language": "Ngôn ngữ",
+  "login-signup": "Đăng ký",
+  "login-button": "Đăng nhập",
+  "login-label-password": "Mật khẩu",
+  "login-holder-password": "mật khẩu",
+  "login-label-account": "Tài khoản",
+  "login-holder-account": "tài khoản",
+  "regis-title": "Đăng ký Tài khoản",
+  "regis-return": "Quay lại",
+  "regis-submit": "Gửi",
+  "regis-label-token": "Mã thông báo",
+  "regis-holder-token": "Mã thông báo đầu vào",
+  "regis-label-confirm-password": "Xác nhận mật khẩu",
+  "regis-holder-confirm-password": "Nhập mật khẩu xác nhận",
+  "regis-label-password": "Mật khẩu",
+  "regis-holder-password": "Nhập mật khẩu",
+  "regis-password-hint": "* Ít nhất 8 ký tự & Ít nhất một ký tự và một số",
+  "regis-label-username": "Tài khoản",
+  "regis-holder-username": "Tài khoản đầu vào",
+  "regis-username-hint": "* Ít nhất 4 ký tự & Chỉ ký tự và số",
+  "regis-label-name": "Tên hiển thị",
+  "regis-holder-name": "Nhập tên hiển thị"
+
+  , "book-title": "Hệ thống đặt trước"
+  ,"header-title-orange": "Hệ thống nhận dạng biển số màu cam của trò chơi"
+  ,"book-table-title":"bàn sách"
+
+  , "record-table-title": "Hồ sơ vượt qua"
+  , "record-table-list": "Truy cập danh sách bản ghi"
+
+  ,"tên khách": "Tên"
+  ,"đơn vị khách truy cập": "đơn vị"
+  ,"loại xe khách": "Loại xe"
+  ,"visitor-allowType": "Điều kiện"
+  ,"visitor-note": "Ghi chú"
+  ,"visitor-visitorStartStr": "Thời gian bắt đầu đặt phòng"
+  ,"visitor-visitorEndStr": "Thời gian kết thúc cuộc hẹn"
+  ,"visitor-plateNumber": "Số biển số"
+
+  ,"black-list": "Danh sách đen"
+
+  ,"recognitionTimeStr": "Thời gian nhận dạng"
+  , "passStatus": "Trạng thái"
+  , "cameraId": "máy ảnh"
+
+  ,"car-type-all":"tất cả các loại"
+  ,"xe-loại-xe":"xe"
+  ,"car-type-motor":"motor"
+}

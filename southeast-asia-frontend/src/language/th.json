@@ -1,0 +1,72 @@
+{
+  "header-title": "ระบบจดจำยานพาหนะ",
+  "header-profile": "ประวัติโดยย่อ",
+  "header-logout": "ออกจากระบบ",
+  "menu-violation": "ละเมิด",
+  "menu-lpr": "LPR",
+  "menu-live": "Live",
+  "violation-title": "ละเมิด",
+  "lpr-title": "LPR",
+  "live-title": "Live",
+  "profile-title": "ประวัติโดยย่อ",
+  "table-title":"รายการละเมิด",
+  "table-th1":"เลขที่",
+  "table-th2":"ที่ตั้ง",
+  "table-th3":"ละเมิด",
+  "table-th4":"เวลา",
+  "table-th5":"ประเภท",
+  "table-th6":"ป้ายทะเบียนรถ",
+  "table-th7":"อีก",
+  "table-th8":"อีก",
+  "Img-btn": "รูปภาพ",
+  "Video-btn": "วิดีโอ",
+  "login-title": "ล็อคอิน",
+  "login-language": "ภาษา",
+  "login-signup": "รับสมัคร",
+  "login-button": "ล็อคอิน",
+  "login-label-password": "รหัสผ่าน",
+  "login-holder-password": "รหัสผ่าน",
+  "login-label-account": "บัญชี",
+  "login-holder-account": "บัญชี",
+  "regis-title": "การลงทะเบียนบัญชี",
+  "regis-return": "กลับ",
+  "regis-submit": "ส่ง",
+  "regis-label-token": "โทเค็น",
+  "regis-holder-token": "ป้อนโทเค็น",
+  "regis-label-confirm-password": "ยืนยันรหัสผ่าน",
+  "regis-holder-confirm-password": "ป้อนยืนยันรหัสผ่าน",
+  "regis-label-password": "รหัสผ่าน",
+  "regis-holder-password": "ป้อนรหัสผ่าน",
+  "regis-password-hint": "* อย่างน้อย 8 ตัวอักษร & อย่างน้อยหนึ่งตัวอักษรและหนึ่งตัวเลข",
+  "regis-label-username": "บัญชี",
+  "regis-holder-username": "ป้อนข้อมูลบัญชี",
+  "regis-username-hint": "* อย่างน้อย 4 ตัวอักษร & อักขระและตัวเลขเท่านั้น",
+  "regis-label-name": "ชื่อที่แสดง",
+  "regis-holder-name": "ป้อนชื่อที่แสดง"
+
+  ,"ชื่อหนังสือ": "ระบบจอง"
+  ,"header-title-orange": "ระบบการจดจำป้ายทะเบียนเกม Orange"
+  ,"ชื่อโต๊ะหนังสือ":"โต๊ะหนังสือ"
+
+  ,"ชื่อตารางบันทึก": "บันทึกผ่าน"
+  , "record-table-list": "เข้าถึงรายการบันทึก"
+
+  ,"ชื่อผู้เยี่ยมชม": "ชื่อ"
+  ,"ผู้เข้าชมหน่วย": "หน่วย"
+  ,"visitor-vehicleType": "ประเภทรถ"
+  ,"visitor-allowType": "สิทธิ์"
+  ,"visitor-note": "หมายเหตุ"
+  ,"visitor-visitorStartStr": "เวลาเริ่มต้นการจอง"
+  ,"visitor-visitorEndStr": "เวลาสิ้นสุดการนัดหมาย"
+  ,"visitor-plateNumber": "หมายเลขทะเบียนรถ"
+
+  ,"บัญชีดำ": "บัญชีดำ"
+
+  ,"recognitionTimeStr": "เวลาการรับรู้"
+  , "passStatus": "สถานะ"
+  , "รหัสกล้อง": "กล้อง"
+
+  , "ประเภทรถทั้งหมด": "ทุกประเภท"
+  , "รถประเภทรถ": "รถยนต์"
+  , "ประเภทรถยนต์-มอเตอร์": "มอเตอร์"
+}
