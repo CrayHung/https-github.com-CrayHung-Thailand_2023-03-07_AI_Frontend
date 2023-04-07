@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ImgButton(props) {
 
-  const imgPath = props.imgPath
+  const imagePath = props.imagePath
 
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -26,8 +26,9 @@ function ImgButton(props) {
 return <>
     <button type="button" className="btn btn-primary btn-option" onClick={showModal}><FormattedMessage id="Img-btn" /></button>
     <Modal title={<FormattedMessage id="Img-btn" />} centered width={1000} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-		  <Image src={`https://twowayiot.com/${imgPath}`} width={960} height={540} />
-		</Modal>
+		  {/* <Image src={`https://twowayiot.com/${imgPath}`} width={960} height={540} /> */}
+      <Image src={imagePath} width={960} height={540} />
+    </Modal>
             </>
 }
 export default ImgButton

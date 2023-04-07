@@ -3,7 +3,7 @@
 
 ## 在server端使用mklink硬連結以方便開啟圖片
 
-mklink D:\react\Thailand_CarPlate_AI\Thailand_CarPlate_AI-frontend\public\jpg D:\workspace\ThaiLPR\jpg
+mklink E:\lpr_cmp_cray\Hsinchu_cmp\React\myapp\public\jpg E:\lpr_cmp_cray\Hsinchu_cmp\Lpr\lpr_cmp\jpg
 
 
 ## Requirement

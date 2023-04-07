@@ -59,6 +59,7 @@
    ,"visitor-visitorStartStr": "Reservation start time"
    ,"visitor-visitorEndStr": "Appointment end time"
    ,"visitor-plateNumber": "Plate Number"
+   ,"visitor-plateNumber-small": "Plate Number (small image)"
 
    ,"black-list": "Blacklist"
 

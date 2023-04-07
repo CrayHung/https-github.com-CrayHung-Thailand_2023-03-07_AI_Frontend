@@ -5,17 +5,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./LiveVideo.css";
 import { FormattedMessage, useIntl } from "react-intl";
 
-
+const ip = window.location.host.split(":")[0];
 
 export default function LiveVideo(){
 
 
   /*************************docker hls作法 START****************************** */
 
-const ip_win = window.location.host.split(":")[0];
+// const ip_win = window.location.host.split(":")[0];
 //console.log("ip_win="+ip_win);
 /**啟動docker hls的port位置8081  */
-const ip = "http://localhost:8081"
+const ip_hls = "http://localhost:8081"
  //const ip = window.location.host.split(":")[0];  //localhost
 
 
@@ -27,7 +27,7 @@ const rtspUrl = `http://localhost:8081/start`;
 
 
 /** 現場RTSP URi */  
- const rtspUrl1 = "rtsp://admin:123456@192.168.2.36:554/media/media.amp?streamprofile=Profile1&audio=0";
+const rtspUrl1 = "rtsp://admin:123456@192.168.2.36:554/media/media.amp?streamprofile=Profile1&audio=0";
 
 
 
@@ -48,7 +48,8 @@ function postRtsp1() {
     .then(res => res.json())
     .catch(error => console.error('Error:', error))
     .then(response => {
-      setHlsUri1(ip+response.uri);
+      console.log(ip_hls+response.uri);
+      setHlsUri1(ip_hls+response.uri);
   });
 }
 
@@ -80,7 +81,7 @@ useEffect(() => {
 /**當前端確實接收到websocket傳來的"update"後 , call此func抓新車牌 */
 async function catchPlateNumber(){
   /**連到server取得最新的所有資料 (或只要取車牌資料)  */
-  const res = await fetch("http://localhost:8080/lpr/cams/latest");
+  const res = await fetch(`http://${ip}:8080/lpr/cams/latest`);
   const res_tmp = await res.json();
 
   console.log(res_tmp.cam1);
@@ -95,7 +96,7 @@ async function catchPlateNumber(){
 /**websocket 進入點 */
 useEffect(()=>{
   catchPlateNumber();
-  const wsUrl = "ws://127.0.0.1:8080/ws";
+  const wsUrl = `ws://${ip}:8080/ws`;
   const ws = new WebSocket(wsUrl);
   ws.onopen = () => {
     //console.log(`connected to ${wsUrl}`);
@@ -138,8 +139,8 @@ useEffect(()=>{
             src={hlsuri1}
             autoPlay={true}
             muted={true}
-            width={"50%"}
-            height={"50%"}
+            width={"100%"}
+            height={"100%"}
           />
         </div>
       </div>
@@ -168,8 +169,8 @@ useEffect(()=>{
           <div>
             <img
               alt=""
-              // src={cam1image}
-              src="test.jpg"
+              src={cam1image}
+              //src="test.jpg"
               width={"50%"}
             ></img>
           </div>

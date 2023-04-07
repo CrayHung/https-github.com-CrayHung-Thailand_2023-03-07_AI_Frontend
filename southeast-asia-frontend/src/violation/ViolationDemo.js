@@ -1,5 +1,5 @@
 import ReactTable from "./table/ReactTable";
-import { useEffect, useContext } from "react";
+import {useState, useEffect, useContext } from "react";
 import { FormattedMessage } from "react-intl";
 import ImgButton from "./table/ImgButton";
 import { urlContext } from "../web/Root";
@@ -8,6 +8,7 @@ import { TableContext } from "../tab/Violation";
 
 export default function ViolationDemo() {
   const { tableData, setTableData } = useContext(TableContext);
+  
 
   const serverUrl = useContext(urlContext);
 
@@ -23,6 +24,20 @@ export default function ViolationDemo() {
         for (let i = 0; i < data.length; i++) {
           const eTime0 = data[i]["imagePath"].replace("./", "");
           data[i]["imagePath"] = eTime0;
+
+
+          //字串分割for 小圖
+          //以cam1做切割...要自己補上 /cam1/小圖路徑/
+          //ex :  jpg/20230301/cam1/20230301_114756296_1กฮ4398`.jpg
+          
+          let arr = data[i]["imagePath"].split('/cam1/')
+
+          // console.log("arr[0]="+ arr[0]);  //  jpg/20230301
+          // console.log("arr[1]="+ arr[1]);  //  20230301_114756296_1กฮ4398`.jpg
+
+          const small = arr[0]+"/cam1/plate/" + arr[1];
+          data[i]["smallimagePath"] = small;
+
         }
         setTableData(data);
         //setTableData([...tableData,data]);
@@ -38,6 +53,9 @@ export default function ViolationDemo() {
 
     fetchData();
   }, [fetchurl, setTableData]);
+
+  //console.log(tableData);
+  
 
   return (
     <div className="App">
@@ -60,6 +78,9 @@ const TableHeader = () => {
       <th>
         <FormattedMessage id="visitor-plateNumber" />
       </th>
+      <th>
+        <FormattedMessage id="visitor-plateNumber-small" />
+      </th>
 
       <th>
         <FormattedMessage id="recognitionTimeStr" />
@@ -80,7 +101,9 @@ const tableBody = (value, index) => {
   return (
     <tr key={index}>
       <td>{value.plateNumber}</td>
-
+      <td>
+        <img src={value.smallimagePath}></img>
+        </td>
       <td>{value.recognitionTimeStr}</td>
       <td>{value.cameraId}</td>
       <td>

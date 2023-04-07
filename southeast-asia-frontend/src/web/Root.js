@@ -35,6 +35,7 @@ export default function Root() {
               </>
             } />
 
+
             <Route path="/login" element={<Login />} />
             <Route path="/regis" element={<Regis />} />
           </Routes>

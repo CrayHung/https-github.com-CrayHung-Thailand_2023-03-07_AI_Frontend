@@ -6,6 +6,8 @@ import Live from "../tab/Live";
 import ThaiPlate from "../tab/ThaiPlate";
 import ParkingRecord from "../tab/ParkingRecord";
 
+import Label from "../tab/Label";
+
 
 import {
   Routes,
@@ -20,6 +22,7 @@ export function Main() {
       <div className="main-content">
         <Routes>
           <Route path="/violation" element={<Violation />} />
+          <Route path="/label" element={<Label />} />
 
           <Route path="/" element={<Live />} />
 

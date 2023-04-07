@@ -15,10 +15,7 @@ docker run -v `pwd`/rtsp-stream.yml:/app/rtsp-stream.yml \
            roverr/rtsp-stream:2
 -->
 ```
-docker run -v "C:\Users\Cray.Hung\Desktop\react rtsp\react-rtsp-display\rtsp-stream.yml:/app/rtsp-stream.yml" \
-           -p 8080:8080 -d \
-           --name rtsp \
-           roverr/rtsp-stream:2
+docker run -v "C:\Users\Cray.Hung\Desktop\south-east\southeast-asia-frontend\src\live\rtsp-stream.yml:/app/rtsp-stream.yml" -p 8081:8080 -d --name rtsp roverr/rtsp-stream:2
 ```
 
 

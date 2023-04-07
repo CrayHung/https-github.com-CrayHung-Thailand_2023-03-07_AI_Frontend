@@ -59,6 +59,7 @@
   ,"visitor-visitorStartStr": "預約起始時間"
   ,"visitor-visitorEndStr": "預約結束時間"  
   ,"visitor-plateNumber": "車牌號碼"  
+  ,"visitor-plateNumber-small": "車牌號碼 (小圖)"
 
   ,"black-list": "黑名單"
 
